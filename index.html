@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์นักศึกษา | กุลภัทรา อ่อนเพชรคง</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- ลูกบอลตกแต่งพื้นหลัง -->
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+ 
+    <main class="card">
+ 
+        <div class="avatar">
+            <!-- เปลี่ยน photo.jpg เป็นชื่อไฟล์รูปของคุณ (วางไว้โฟลเดอร์เดียวกับ index.html) -->
+            <img src="/Users/mac2/Documents/ดาวน์โหลด.jpeg" alt="รูปโปรไฟล์ กุลภัทรา อ่อนเพชรคง"
+                 onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%23ffd6e8%22/><circle cx=%22100%22 cy=%2278%22 r=%2738%22 fill=%22%23fff%22/><path d=%22M30 190c0-45 31-70 70-70s70 25 70 70z%22 fill=%22%23fff%22/></svg>'">
+        </div>
+ 
+        <span class="badge">⭐ STUDENT PROFILE</span>
+ 
+        <h1>นางสาว กุลภัทรา อ่อนเพชรคง</h1>
+        <h2>เกียร์</h2>
+        <p class="role">นักเรียน/นักศึกษา | Information Technology</p>
+ 
+        <ul class="info">
+            <li>
+                <span class="icon">💻</span>
+                <span>แผนกวิชาเทคโนโลยีสารสนเทศ</span>
+            </li>
+            <li>
+                <span class="icon">🎓</span>
+                <span>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</span>
+            </li>
+            <li>
+                <span class="icon">📚</span>
+                <span>ระดับชั้น ปวช.3/1</span>
+            </li>
+        </ul>
+ 
+        <section class="about">
+            <h3>👤 เกี่ยวกับฉัน</h3>
+            <p>
+                สวัสดีค่ะ ดิฉันเป็นนักศึกษาในวิทยาลัยอาชีวศึกษานครศรีธรรมราช
+                เรียนแผนกวิชาเทคโนโลยีสารสนเทศ กำลังศึกษาอยู่ชั้น ปวช.3/1
+            </p>
+        </section>
+ 
+        <button class="welcome-btn" id="welcomeBtn" type="button">💖 ยินดีต้อนรับ</button>
+        <p class="welcome-msg" id="welcomeMsg">ยินดีต้อนรับสู่หน้าเว็บของกุลภัทราคะ 💙💗</p>
+ 
+    </main>
+ 
+    <script>
+        const btn = document.getElementById('welcomeBtn');
+        const msg = document.getElementById('welcomeMsg');
+        btn.addEventListener('click', () => {
+            msg.classList.toggle('show');
+        });
+    </script>
+ 
+</body>
+</html>
+ 
